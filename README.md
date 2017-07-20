@@ -5,10 +5,10 @@ welcome to hell
 
 ## Create Information
 
-#### use <insert database name>
+#### use __insert database name__
 - creates a new database
 
-#### db.<insert collection name>.insert()
+#### db.__insert collection name__.insert()
 - creates a collection name and insert data into it
 
 #### db.createCollection('insert collection name')
