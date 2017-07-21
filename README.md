@@ -110,8 +110,8 @@ welcome to hell
 #### db.runCommand({count:"*insert collection name*"})
 - counts the number of documents in the collection name that you specify
 
-#### db.runCommand({count:"*insert collection name*", query:{*insert key*:"*insert key*"}})
+#### db.runCommand({count:"*insert collection name*", query:{*insert key*:"*insert value*"}})
 - counts the number of documents that are in the collection name that has the key value pair in query
 
-#### db.runCommand({count:"*insert collection name*", query:{*insert key*:"*insert key*", *insert key*:"*insert key*"}})
+#### db.runCommand({count:"*insert collection name*", query:{*insert key*:"*insert value*", *insert key*:"*insert value*"}})
 - counts the number of documents that are in the collection name that has the key value pairs in query
