@@ -2,6 +2,15 @@
 
 welcome to hell
 
+- [What are the different Schema Types][schema-types]
+
+#schema-types:what-are-the-different-schema-types
+
+
+## What are the different Schema Types
+
+**reference**
+-[mongoosejs](https://mongoosejs.com/docs/schematypes.html)
 
 ## Create Information
 
