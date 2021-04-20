@@ -8,7 +8,7 @@ welcome to hell
 #### use *insert database name*
 - creates a new database
 
-#### db.*insert collection name*.insert()
+#### db.insertCollectionName.insert()
 - creates a collection name and insert data into it
 
 #### db.createCollection('insert collection name')
