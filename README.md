@@ -31,10 +31,10 @@ welcome to hell
 #### db.dropDatabase()
 - deletes the current database you are in
 
-#### db.*insert collection name*.drop()
+#### db.insertCollectionName.drop()
 - deletes the specified collection
 
-#### db.*insert collection name*.remove()
+#### db.insertCollectionName.remove()
 - deletes the documents in the collection
 
 ## Find Information
