@@ -4,13 +4,24 @@ welcome to hell
 
 - [What are the different Schema Types][schema-types]
 
-#schema-types:what-are-the-different-schema-types
+[schema-types]:#what-are-the-different-schema-types
 
 
 ## What are the different Schema Types
 
-**reference**
+<details>
+<summary>
+View Content
+</summary>
+
+:link: **Reference**
+
 -[mongoosejs](https://mongoosejs.com/docs/schematypes.html)
+
+</details>
+
+[go back :house:][home]
+
 
 ## Create Information
 
