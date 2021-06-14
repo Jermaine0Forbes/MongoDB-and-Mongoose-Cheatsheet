@@ -3,10 +3,35 @@
 welcome to hell
 
 - [What are the different Schema Types][schema-types]
+- [How to dump all databases][dump-all]
 
+[dump-all]:#How-to-dump-all-databases
 [home]:#MongoDB-and-Mongoose-Cheatsheet
 [schema-types]:#what-are-the-different-schema-types
 
+
+
+## How to dump all databases
+
+<details>
+<summary>
+View Content
+</summary>
+
+:link: **Reference**
+
+-[tutorialspoint](https://www.tutorialspoint.com/mongodb/mongodb_create_backup.htm)
+  
+  ```
+ // In the command line enter this
+  
+  mongodump  --host 127.0.0.1 --port 27017 -o ./data-backups/mongodb/
+  
+  ```
+
+</details>
+
+[go back :house:][home]
 
 ## What are the different Schema Types
 
