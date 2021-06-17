@@ -47,6 +47,8 @@ View Content
   |Type | Description|
   |-|-|
   |String | Self Explanatory|
+  |String | Self Explanatory|
+
 
 </details>
 
