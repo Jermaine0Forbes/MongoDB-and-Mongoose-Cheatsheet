@@ -43,6 +43,10 @@ View Content
 :link: **Reference**
 
 -[mongoosejs](https://mongoosejs.com/docs/schematypes.html)
+  
+  |Type | Description|
+  |-|-|
+  |String | Self Explanatory|
 
 </details>
 
