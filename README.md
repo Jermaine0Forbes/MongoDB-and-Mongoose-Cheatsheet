@@ -46,8 +46,17 @@ View Content
   
   |Type | Description|
   |-|-|
-  |String | Self Explanatory|
-  |String | Self Explanatory|
+  |String | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#strings)|
+  |Number | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#numbers)|
+  |Date | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#dates)|
+  |Buffer | [Not Sure](https://mongoosejs.com/docs/schematypes.html#buffers)|
+  |Mixed | "anything goes" SchemaType|
+  |ObjectId | is a special type typically used for unique identifiers|
+  |Boolean | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#booleans)|
+  |Array | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#arrays)|
+  |Decimal128 | [Self Explanatory](https://mongoosejs.com/docs/api.html#mongoose_Mongoose-Decimal128)|
+  |Map | [ maps are how you create a nested document with arbitrary keys](https://mongoosejs.com/docs/schematypes.html#maps)|
+  |Schema | [declares a path as another schema](https://mongoosejs.com/docs/schematypes.html#schemas)|
 
 
 </details>
