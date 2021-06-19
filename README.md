@@ -5,11 +5,34 @@ welcome to hell
 - [What are the different Schema Types][schema-types]
 - [How to dump all databases][dump-all]
 
+
+### Create Information
+
+- [how to create a database][create-db]
+- [how to create a collection and insert data][create-col-ins]
+
+[create-col-ins]:#how-create-a-collection-and-insert-data
+[create-db]:#how-to-create-a-database
 [dump-all]:#How-to-dump-all-databases
 [home]:#MongoDB-and-Mongoose-Cheatsheet
 [schema-types]:#what-are-the-different-schema-types
 
+### how to create a collection and insert data
 
+<details>
+<summary>
+View Content
+</summary>
+
+
+```
+db.insertCollectionName.insert()
+```
+
+
+</details>
+
+[go back to table of contents][home]
 
 ## How to dump all databases
 
@@ -50,11 +73,11 @@ View Content
   |Number | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#numbers)|
   |Date | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#dates)|
   |Buffer | [Not Sure](https://mongoosejs.com/docs/schematypes.html#buffers)|
-  |Mixed | "anything goes" SchemaType|
-  |ObjectId | is a special type typically used for unique identifiers|
+  |Mixed | ["anything goes" SchemaType](https://mongoosejs.com/docs/schematypes.html#mixed)|
+  |ObjectId | [is a special type typically used for unique identifiers](https://mongoosejs.com/docs/schematypes.html#objectids)|
   |Boolean | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#booleans)|
   |Array | [Self Explanatory](https://mongoosejs.com/docs/schematypes.html#arrays)|
-  |Decimal128 | [Self Explanatory](https://mongoosejs.com/docs/api.html#mongoose_Mongoose-Decimal128)|
+  |Decimal128 | [Used for declaring paths in your schema that should be 128-bit decimal floating points](https://mongoosejs.com/docs/api.html#mongoose_Mongoose-Decimal128)|
   |Map | [ maps are how you create a nested document with arbitrary keys](https://mongoosejs.com/docs/schematypes.html#maps)|
   |Schema | [declares a path as another schema](https://mongoosejs.com/docs/schematypes.html#schemas)|
 
@@ -66,11 +89,24 @@ View Content
 
 ## Create Information
 
-#### use *insert database name*
-- creates a new database
 
-#### db.insertCollectionName.insert()
-- creates a collection name and insert data into it
+### how to create a database
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+use *insert database name*
+```
+
+</details>
+
+[go back to table of contents][home]
+
+
+
 
 #### db.createCollection('insert collection name')
 - creates a new collection name
