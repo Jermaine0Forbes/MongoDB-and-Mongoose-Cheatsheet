@@ -1,6 +1,5 @@
 # MongoDB CheatSheet
 
-welcome to hell
 
 - [What are the different Schema Types][schema-types]
 - [How to dump all databases][dump-all]
@@ -22,7 +21,23 @@ welcome to hell
 ### Delete Information
 
 - [delete current database][drop-db]
+- [delete a collection][del-col]
+- [delete rows in a collection][del-rows]
 
+
+### Find Information
+
+- [get all rows][db-find]
+- [get rows in organized format][db-pretty]
+- [get first row][db-first]
+- [get rows based on value][get-val]
+
+[get-val]:#get-rows-based-on-value
+[db-first]:#get-first-row
+[db-pretty]:#get-rows-in-organized-format
+[db-find]:#get-all-rows
+[del-rows]:#delete-rows-in-a-collection
+[del-col]:#delete-a-collection
 [drop-db]:#delete-current-database
 [show-db]:#show-current-database
 [show-col]:#show-all-collections
@@ -33,6 +48,106 @@ welcome to hell
 [dump-all]:#How-to-dump-all-databases
 [home]:#MongoDB-and-Mongoose-Cheatsheet
 [schema-types]:#what-are-the-different-schema-types
+
+### get rows based on value
+
+<details>
+<summary>
+View Content
+</summary>
+
+retrieves the specific document that matches the key and value
+
+```
+db.*insert collection name*.find({ "*insert key*": "*insert value*" })
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+
+### get first row
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+db.*insert collection name*.findOne()
+```
+
+</details>
+
+[go back to table of contents][home]
+
+### get rows in organized format
+
+<details>
+<summary>
+View Content
+</summary>
+
+retrieves all the documents that are in the collection and organizes the information better
+
+```
+db.*insert collection name*.find().pretty()
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+### get all rows
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+db.*insert collection name*.find()
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+### delete rows in a collection
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+db.insertCollectionName.remove()
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+### delete a collection
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+db.insertCollectionName.drop()
+```
+
+
+</details>
+
+[go back to table of contents][home]
 
 ### delete current database
 
@@ -204,31 +319,6 @@ use *insert database name*
 [go back to table of contents][home]
 
 
-
-
-
-#### db.dropDatabase()
-- deletes the current database you are in
-
-#### db.insertCollectionName.drop()
-- deletes the specified collection
-
-#### db.insertCollectionName.remove()
-- deletes the documents in the collection
-
-## Find Information
-
-#### db.*insert collection name*.find()
-- retrieves all the documents that are in the collection
-
-#### db.*insert collection name*.find().pretty()
-- retrieves all the documents that are in the collection and organizes the information better
-
-#### db.*insert collection name*.findOne()
-- retrieves the first document in the collection
-
-#### db.*insert collection name*.find({ "*insert key*": "*insert value*" })
-- retrieves the specific document that matches the key and value
 
 #### db.*insert collection name*.find({ "*insert key*": { $gt : "*insert value*" }})
 - retrieves the specific document that is greater than the value in the key
