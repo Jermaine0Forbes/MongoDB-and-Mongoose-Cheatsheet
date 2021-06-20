@@ -10,12 +10,110 @@ welcome to hell
 
 - [how to create a database][create-db]
 - [how to create a collection and insert data][create-col-ins]
+- [how create a collection][create-col]
 
+### Show Information
+
+- [show all databases][show-dbs]
+- [show all collections][show-col]
+- [show current database][show-db]
+
+
+### Delete Information
+
+- [delete current database][drop-db]
+
+[drop-db]:#delete-current-database
+[show-db]:#show-current-database
+[show-col]:#show-all-collections
+[show-dbs]:#show-all-databases
+[create-col]:#how-to-create-a-collection
 [create-col-ins]:#how-create-a-collection-and-insert-data
 [create-db]:#how-to-create-a-database
 [dump-all]:#How-to-dump-all-databases
 [home]:#MongoDB-and-Mongoose-Cheatsheet
 [schema-types]:#what-are-the-different-schema-types
+
+### delete current database
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+db.dropDatabase()
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+### show current database
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+db
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+
+### show all collections
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+show collections
+```
+
+
+</details>
+
+[go back to table of contents][home]
+
+### show all databases
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+show dbs
+```
+
+
+</details>
+
+[go back to table of contents][home]
+  
+### how to create a database
+
+<details>
+<summary>
+View Content
+</summary>
+
+```
+#### db.createCollection('insert collection name')
+```
+
+
+</details>
+
+[go back to table of contents][home]
 
 ### how to create a collection and insert data
 
@@ -108,22 +206,6 @@ use *insert database name*
 
 
 
-#### db.createCollection('insert collection name')
-- creates a new collection name
-
-
-## Show Information
-
-#### show dbs
-- shows all the databases
-
-#### show collections
-- shows all the collections in the database
-
-#### db
-- shows the current database you are in
-
-## Delete Information
 
 #### db.dropDatabase()
 - deletes the current database you are in
