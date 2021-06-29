@@ -1,6 +1,6 @@
 # MongoDB CheatSheet
 
-
+- [how to import a document][import-document]
 - [What are the different Schema Types][schema-types]
 - [How to dump all databases][dump-all]
 
@@ -32,6 +32,7 @@
 - [get first row][db-first]
 - [get rows based on value][get-val]
 
+[import-document]:#how-to-import-a-document
 [get-val]:#get-rows-based-on-value
 [db-first]:#get-first-row
 [db-pretty]:#get-rows-in-organized-format
@@ -48,6 +49,31 @@
 [dump-all]:#How-to-dump-all-databases
 [home]:#MongoDB-and-Mongoose-Cheatsheet
 [schema-types]:#what-are-the-different-schema-types
+
+
+### how to import a document
+
+<details>
+<summary>
+View Content
+</summary>
+
+**Reference**
+
+- [stackoverflow](https://stackoverflow.com/questions/6770498/how-to-import-bson-file-format-on-mongodb)
+- [Import Data into MongoDB](https://docs.mongodb.com/guides/server/import/)
+
+```
+// mongorestore -d databaseName  -c collectionName  ./path/to/file
+
+ mongorestore -d Ava -c users  ~/data-backups/mongodb/mongo-2021-6-28/Ava/users.bson
+
+```
+
+
+</details>
+
+[go back to table of contents][home]
 
 ### get rows based on value
 
@@ -247,7 +273,7 @@ db.insertCollectionName.insert()
 
 [go back to table of contents][home]
 
-## How to dump all databases
+### How to dump all databases
 
 <details>
 <summary>
@@ -269,7 +295,7 @@ View Content
 
 [go back :house:][home]
 
-## What are the different Schema Types
+### What are the different Schema Types
 
 <details>
 <summary>
@@ -299,8 +325,6 @@ View Content
 
 [go back :house:][home]
 
-
-## Create Information
 
 
 ### how to create a database
